@@ -10,7 +10,7 @@ const CountryLookup = () => {
       const response = await fetch(
         `https://extreme-ip-lookup.com/json/?key=${process.env.NEXT_PUBLIC_API}`
       )
-        .then((res) => res.json)
+        .then((res) => res.json())
         .then((data) => data.country);
       if (!response) return;
       setCountry(response);
