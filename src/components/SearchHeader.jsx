@@ -4,6 +4,7 @@ import React from "react";
 import SearchBox from "./SearchBox";
 import { RiSettings3Line } from "react-icons/ri";
 import { TbGridDots } from "react-icons/tb";
+import SearchHeaderOptins from "./SearchHeaderOptins";
 
 const SearchHeader = () => {
   return (
@@ -30,6 +31,7 @@ const SearchHeader = () => {
           Sign In
         </button>
       </div>
+      <SearchHeaderOptins />
     </header>
   );
 };
